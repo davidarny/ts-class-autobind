@@ -1,7 +1,13 @@
 # Method auto-bind for TypeScript
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Github Releases](https://img.shields.io/github/downloads/DavidArutiunian/ts-class-autobind/total.svg)](https://github.com/DavidArutiunian/ts-class-autobind)
 [![CircleCI](https://circleci.com/gh/DavidArutiunian/ts-class-autobind/tree/master.svg?style=svg)](https://circleci.com/gh/DavidArutiunian/ts-class-autobind/tree/master)
+[![GitHub license](https://img.shields.io/github/license/DavidArutiunian/ts-class-autobind.svg)](https://github.com/DavidArutiunian/ts-class-autobind/blob/master/LICENSE.md)
+[![npm version](https://badge.fury.io/js/ts-class-autobind.svg)](https://badge.fury.io/js/ts-class-autobind)
+[![David](https://img.shields.io/david/dev/DavidArutiunian/ts-class-autobind.svg)](https://github.com/DavidArutiunian/ts-class-autobind)
+[![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/ts-class-autobind.svg)](https://www.npmjs.com/package/ts-class-autobind)
+[![npm type definitions](https://img.shields.io/npm/types/ts-class-autobind.svg)](https://github.com/DavidArutiunian/ts-class-autobind)
 
 Based on [class-autobind](https://github.com/kodefox/class-autobind) package.
 
