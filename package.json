@@ -13,7 +13,6 @@
     "watch": "tsc -w",
     "lint": "tslint -p tsconfig.json",
     "test": "cross-env NODE_ENV=testing nyc mocha",
-    "test:ci": "cross-env NODE_ENV=testing nyc --reporter=text-lcov --reporter=html mocha",
     "test:debug:win": "cross-env NODE_ENV=testing nyc mocha %NODE_DEBUG_OPTION%",
     "test:debug:linux": "cross-env NODE_ENV=testing nyc mocha $NODE_DEBUG_OPTION"
   },
