@@ -1,0 +1,5 @@
+--timeout=10000
+--recursive
+--require ts-node/register
+--require source-map-support/register
+test/**/*.ts
