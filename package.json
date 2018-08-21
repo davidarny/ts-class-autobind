@@ -40,5 +40,13 @@
     "hooks": {
       "pre-commit": "npm run test && pretty-quick --staged && npm run lint"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidArutiunian/ts-class-autobind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DavidArutiunian/ts-class-autobind/issues"
+  },
+  "homepage": "https://github.com/DavidArutiunian/ts-class-autobind#method-auto-bind-for-typescript"
 }
