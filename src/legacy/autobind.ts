@@ -1,9 +1,9 @@
-import { isFunction } from "./isFunction";
-import { isExcluded } from "./isExcluded";
-import { isPrototype } from "./isPrototype";
-import { IPrototype } from "./IPrototype";
+import { IPrototype } from "../IPrototype";
+import { isPrototype } from "../isPrototype";
+import { isFunction } from "../isFunction";
+import { isExcluded } from "../isExcluded";
 
-export function autobind(instance: unknown, proto?: unknown): void {
+export function autobind(instance: any, proto?: any): void {
     if (!proto) {
         try {
             proto = Object.getPrototypeOf(instance);

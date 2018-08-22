@@ -1,4 +1,16 @@
+.idea/
+.circleci/
+coverage/
 lib/
+test/
+.editorconfig
+.gitattributes
+.gitignore
+.npmignore
+.nycrc
+.prettierrc
+tsconfig.json
+tslint.json
 
 # Created by .ignore support plugin (hsz.mobi)
 ### macOS template

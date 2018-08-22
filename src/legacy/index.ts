@@ -1,0 +1,1 @@
+export { autobind } from "./autobind";

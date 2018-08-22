@@ -24,19 +24,19 @@ Note: This has some specific logic for React, but could be used in any project.
 ## Usage:
 
 ```typescript jsx
-import { autobind } from 'ts-class-autobind';
+import { autobind } from "ts-class-autobind";
 
 class MyComponent extends React.Component {
-  constructor() {
-    super(...arguments);
-    autobind(this);
-  }
-  render() {
-    return <button onClick={this.onClick}>Click Me</button>;
-  }
-  onClick() {
-    console.log('Button Clicked');
-  }
+    constructor() {
+        super(...arguments);
+        autobind(this);
+    }
+    render() {
+        return <button onClick={this.onClick}>Click Me</button>;
+    }
+    onClick() {
+        console.log("Button Clicked");
+    }
 }
 ```
 
@@ -45,22 +45,26 @@ class MyComponent extends React.Component {
 If your component will possibly be subclassed (you really should not do this, but some third-party libraries like [react-css-modules](https://npmjs.com/package/react-css-modules) do so) then you will need to specify which prototype will be the source of methods that are to be automatically bound.
 
 ```typescript jsx
-import { autobind } from 'ts-class-autobind';
+import { autobind } from "ts-class-autobind";
 
 class MyComponent extends React.Component {
-  constructor() {
-    super(...arguments);
-    autobind(this, MyComponent.prototype); // Note the second parameter.
-  }
-  render() {
-    /* ... */
-  }
+    constructor() {
+        super(...arguments);
+        autobind(this, MyComponent.prototype); // Note the second parameter.
+    }
+    render() {
+        /* ... */
+    }
 }
 
 class MySubClassedComponent extends MyComponent {
-  /* This is probably a very bad idea. */
+    /* This is probably a very bad idea. */
 }
 ```
+
+### Legacy version
+
+To use with **TypeScript 2.9** or lower version import from `ts-class-autobind/lib/legacy`
 
 ## License
 
