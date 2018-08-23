@@ -1,3 +1,4 @@
+--expose-gc
 --timeout=10000
 --recursive
 --require ts-node/register
