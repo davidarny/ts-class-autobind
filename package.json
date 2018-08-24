@@ -1,6 +1,6 @@
 {
     "name": "ts-class-autobind",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "keywords": [
         "react",
         "autobind",
@@ -15,7 +15,8 @@
         "lint": "tslint -p tsconfig.json",
         "test": "cross-env NODE_ENV=testing nyc mocha",
         "test:debug:win": "cross-env NODE_ENV=testing nyc mocha %NODE_DEBUG_OPTION%",
-        "test:debug:linux": "cross-env NODE_ENV=testing nyc mocha $NODE_DEBUG_OPTION"
+        "test:debug:linux": "cross-env NODE_ENV=testing nyc mocha $NODE_DEBUG_OPTION",
+        "prepublish": "npm run build"
     },
     "author": "arutiunian666@gmail.com",
     "license": "ISC",
