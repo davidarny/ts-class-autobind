@@ -1,9 +1,9 @@
-import { autobind } from "../src/autobind";
+import { autobind } from "../src/legacy";
 import { expect } from "chai";
 
 const invoke = (fn: Function) => fn();
 
-describe("Autobind", () => {
+describe("Legacy Autobind", () => {
     it("should bind methods", () => {
         class Foo {
             constructor() {

@@ -6,13 +6,12 @@
         "tslint-sonarts"
     ],
     "rules": {
+        "member-ordering": false,
         "object-literal-sort-keys": false,
         "no-namespace": false,
         "ordered-imports": false,
         "ban-types": false,
-        "member-access": [
-            true,
-            "no-public"
-        ]
+        "member-access": [true, "no-public"],
+        "variable-name": [true, "allow-leading-underscore"]
     }
 }

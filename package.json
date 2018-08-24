@@ -1,6 +1,6 @@
 {
     "name": "ts-class-autobind",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "keywords": [
         "react",
         "autobind",
@@ -22,6 +22,7 @@
     "devDependencies": {
         "@types/chai": "^4.1.4",
         "@types/mocha": "^5.2.5",
+        "@types/node": "^10.9.0",
         "chai": "^4.1.2",
         "cross-env": "^5.2.0",
         "husky": "^1.0.0-rc.13",
