@@ -1,6 +1,7 @@
 {
     "extends": ["../tslint.json"],
     "rules": {
+        "no-big-function": false,
         "max-classes-per-file": false,
         "no-console": false,
         "no-unused-expression": false

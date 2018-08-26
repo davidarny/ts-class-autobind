@@ -2,6 +2,7 @@ import { IPrototype } from "../IPrototype";
 import { isPrototype } from "../isPrototype";
 import { isFunction } from "../isFunction";
 import { isExcluded } from "../isExcluded";
+import { Const } from "../const";
 
 export function autobind(instance: any, proto?: any): void {
     if (!proto) {
@@ -20,6 +21,9 @@ function bind(name: string, instance: any, proto?: any): void {
         return;
     }
     if (!isPrototype<IPrototype>(instance)) {
+        return;
+    }
+    if (name === Const.CONSTRUCTOR) {
         return;
     }
     const descriptor = Object.getOwnPropertyDescriptor(proto, name);

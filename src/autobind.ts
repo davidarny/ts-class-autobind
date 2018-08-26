@@ -2,13 +2,14 @@ import { isFunction } from "./isFunction";
 import { isExcluded } from "./isExcluded";
 import { isPrototype } from "./isPrototype";
 import { IPrototype } from "./IPrototype";
+import { Const } from "./const";
 
 export function autobind(instance: unknown, proto?: unknown): void {
     if (!proto) {
         try {
             proto = Object.getPrototypeOf(instance);
         } catch (error) {
-            throw new Error(`Cannot get prototype of ${typeof instance}`);
+            throw new Error(`Cannot get prototype of ${instance}`);
         }
     }
     const properties = Object.getOwnPropertyNames(proto);
@@ -20,6 +21,9 @@ function bind(name: string, instance: unknown, proto?: unknown): void {
         return;
     }
     if (!isPrototype<IPrototype>(instance)) {
+        return;
+    }
+    if (name === Const.CONSTRUCTOR) {
         return;
     }
     const descriptor = Object.getOwnPropertyDescriptor(proto, name);
