@@ -1,10 +1,7 @@
 {
-    "extension": [
-        ".ts",
-        ".tsx"
-    ],
-    "temp-directory": "./coverage/.nyc_output",
-    "report-dir": "./coverage",
+    "extension": [".ts"],
+    "temp-dir": "coverage/.nyc_output",
+    "report-dir": "coverage",
     "exclude": [
         "**/node_modules/**",
         "**/test/**",
@@ -12,10 +9,7 @@
         "**/coverage/**",
         "**/*.d.ts"
     ],
-    "reporter": [
-        "html",
-        "text-summary"
-    ],
+    "reporter": ["html", "text-summary"],
     "statements": 80,
     "lines": 80,
     "functions": 80,

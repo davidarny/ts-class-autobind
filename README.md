@@ -17,6 +17,10 @@ For example, this allows us to pass a method to an event handler `element.addEve
 
 Note: This has some specific logic for React, but could be used in any project.
 
+## Requirements
+
+TypeScript 3.0 or higher
+
 ## Installation:
 
 `npm install --save ts-class-autobind`
@@ -61,10 +65,6 @@ class MySubClassedComponent extends MyComponent {
     /* This is probably a very bad idea. */
 }
 ```
-
-### Legacy version
-
-To use with **TypeScript 2.9** or lower version import from `ts-class-autobind/lib/legacy`
 
 ## License
 
