@@ -6,8 +6,10 @@
 [![CircleCI](https://circleci.com/gh/DavidArutiunian/ts-class-autobind/tree/master.svg?style=svg)](https://circleci.com/gh/DavidArutiunian/ts-class-autobind/tree/master)
 [![GitHub license](https://img.shields.io/github/license/DavidArutiunian/ts-class-autobind.svg)](https://github.com/DavidArutiunian/ts-class-autobind/blob/master/LICENSE.md)
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/ts-class-autobind.svg)](https://www.npmjs.com/package/ts-class-autobind)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![npm type definitions](https://img.shields.io/npm/types/ts-class-autobind.svg)](https://github.com/DavidArutiunian/ts-class-autobind)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
+![GitHub top language](https://img.shields.io/github/languages/top/DavidArutiunian/ts-class-autobind.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DavidArutiunian/ts-class-autobind.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/DavidArutiunian/ts-class-autobind.svg)
 
 Based on [class-autobind](https://github.com/kodefox/class-autobind) package.
 
