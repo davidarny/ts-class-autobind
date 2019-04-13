@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/dt/ts-class-autobind.svg)](https://www.npmjs.com/package/ts-class-autobind)
 [![npm version](https://badge.fury.io/js/ts-class-autobind.svg)](https://badge.fury.io/js/ts-class-autobind)
-[![David](https://img.shields.io/david/dev/DavidArutiunian/ts-class-autobind.svg)](https://github.com/DavidArutiunian/ts-class-autobind)
+[![David](https://img.shields.io/david/DavidArutiunian/ts-class-autobind.svg)](https://github.com/DavidArutiunian/ts-class-autobind)
 [![CircleCI](https://circleci.com/gh/DavidArutiunian/ts-class-autobind/tree/master.svg?style=svg)](https://circleci.com/gh/DavidArutiunian/ts-class-autobind/tree/master)
 [![GitHub license](https://img.shields.io/github/license/DavidArutiunian/ts-class-autobind.svg)](https://github.com/DavidArutiunian/ts-class-autobind/blob/master/LICENSE.md)
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/ts-class-autobind.svg)](https://www.npmjs.com/package/ts-class-autobind)
