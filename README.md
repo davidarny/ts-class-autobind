@@ -10,6 +10,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/DavidArutiunian/ts-class-autobind.svg)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DavidArutiunian/ts-class-autobind.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/DavidArutiunian/ts-class-autobind.svg)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/DavidArutiunian/ts-class-autobind.svg)
 
 Based on [class-autobind](https://github.com/kodefox/class-autobind) package.
 
