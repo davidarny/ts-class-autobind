@@ -58,11 +58,8 @@ describe("Autobind", () => {
 
     it("should not work with fields", () => {
         class Foo {
-            // noinspection JSUnusedGlobalSymbols
             static baz = "wow";
-            // noinspection JSUnusedGlobalSymbols
             hello = "world";
-            // noinspection JSUnusedLocalSymbols
             private foo = "bar";
 
             constructor() {
@@ -160,56 +157,5 @@ describe("Autobind", () => {
         expect(bar.prop).to.equal("field");
         expect(() => (bar.value = bar)).to.not.throw();
         expect(() => (bar.instance = bar)).to.not.throw();
-    });
-
-    // This fails because of prototype chaining
-    it.skip("should work with inheritance correctly", () => {
-        class A {
-            private fields: object[] = [];
-
-            constructor() {
-                autobind(this, A.prototype);
-            }
-
-            private _isVisible = false;
-
-            get isVisible(): boolean {
-                return this._isVisible;
-            }
-
-            set isVisible(value: boolean) {
-                this._isVisible = value;
-            }
-
-            getFields(): object[] {
-                return this.fields;
-            }
-
-            pushToFields(value: object): void {
-                this.fields.push(value);
-            }
-        }
-
-        class B extends A {
-            constructor() {
-                super();
-                autobind(this);
-            }
-        }
-
-        class C extends A {
-            constructor() {
-                super();
-                autobind(this);
-            }
-        }
-
-        const b = new B();
-        const c = new C();
-        b.isVisible = true;
-        b.pushToFields({});
-        expect(b.isVisible).to.equal(true);
-        expect(c.isVisible).to.equal(false);
-        expect(c.getFields().length).to.equal(0);
     });
 });

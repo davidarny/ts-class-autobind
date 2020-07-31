@@ -44,7 +44,6 @@ function isExcluded(key: string): boolean {
     return REACT_EXCLUDE_METHODS[key] === true;
 }
 
-// tslint:disable-next-line:ban-types
 function isFunction(item: unknown): item is Function {
     return typeof item === "function";
 }
