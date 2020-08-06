@@ -32,7 +32,7 @@
         "tsconfig-paths": "^3.9.0",
         "tslint": "^5.20.1",
         "tslint-clean-code": "^0.2.10",
-        "tslint-immutable": "^5.5.2",
+        "tslint-immutable": "^6.0.1",
         "tslint-sonarts": "^1.9.0",
         "typescript": "^3.9.7"
     },
