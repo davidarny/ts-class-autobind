@@ -7,14 +7,17 @@ describe("Performance", function() {
     if (process.env.PERF_TEST !== "true") {
         return;
     }
+
     if (!global.gc) {
         throw new Error(
             "Please, specify --expose-gc Node flag to run performance tests correctly",
         );
     }
+
     this.timeout(`${COUNT}s`);
+
     beforeEach((done: Mocha.Done) => {
-        global.gc();
+        global?.gc?.();
         console.log("Calling garbage collector...");
         setTimeout(() => done(), 5000);
     });
