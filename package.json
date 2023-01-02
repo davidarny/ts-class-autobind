@@ -29,7 +29,7 @@
         "nyc": "^15.1.0",
         "source-map-support": "^0.5.19",
         "ts-node": "^10.7.0",
-        "tsconfig-paths": "^3.9.0",
+        "tsconfig-paths": "^4.1.2",
         "tslint": "^5.20.1",
         "tslint-clean-code": "^0.2.10",
         "tslint-immutable": "^6.0.1",
